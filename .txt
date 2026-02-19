@@ -1,0 +1,20 @@
+src/
+├── assets/
+│   ├── hero-bg.png
+│   ├── portfolio-1.jpg
+│   └── icons/
+├── components/             # Komponen Kecil (Molekul)
+│   ├── ui/                 # Komponen Kecil (Atom)
+│   │   ├── SectionTitle.jsx            # Judul & Sub-judul section
+│   │   ├── ButtonKosul.jsx             # Tombol Hijau "Konsultasi Gratis"
+│   └── Accordion.jsx       # Logika klik buka-tutup untuk FAQ
+├── sections/               # Blok Besar (Organisme)
+│   ├── Hero.jsx            # Bagian atas 
+│   ├── Showcase.jsx        # Bagian "Contoh Website" 
+│   ├── Services.jsx        # Bagian "Jenis Website" 
+│   ├── Workflow.jsx        # Bagian "Alur Ringkas" 
+│   ├── FAQ.jsx             # Bagian Pertanyaan 
+│   └── Footer.jsx          # Bagian paling bawah biru 
+├── App.jsx                 # Tempat menyusun semua sections
+├── index.css               # Styling global (Reset, Font, Warna)
+└── main.jsx                # Entry point React
