@@ -1,10 +1,10 @@
 import React from "react";
-import Hero from "./sections/Hero";        
-import Services from "./sections/Services"; 
-import Showcase from "./sections/Showcase"; 
-import Workflow from "./sections/Workflow"; 
-import FAQ from "./sections/FAQ";           
-import Footer from "./sections/Footer";     
+import Hero from "./sections/Hero";
+import Services from "./sections/Services";
+import Showcase from "./sections/Showcase";
+import Workflow from "./sections/Workflow";
+import FAQ from "./sections/FAQ";
+import Footer from "./sections/Footer";
 
 function App() {
   return (
