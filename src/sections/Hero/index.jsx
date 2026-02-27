@@ -1,0 +1,44 @@
+import React from "react";
+import { motion } from "framer-motion"; // eslint-disable-line
+import SectionWrapper from "../../components/layout/SectionWrapper";
+import HeroBadges from "./HeroBadges";
+import HeroContent from "./HeroContent";
+import { subtlePulse } from "../../animations/variants";
+
+const Hero = () => {
+  return (
+    <SectionWrapper 
+      className="min-h-screen"
+      withPattern={false} 
+    >
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: `linear-gradient(to right, #f0f0f0 1px, transparent 1px), 
+                           linear-gradient(to bottom, #f0f0f0 1px, transparent 1px)`,
+            backgroundSize: "4rem 4rem",
+          }}
+        />
+
+        <motion.div
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-r from-gray-100 via-transparent to-gray-100 rounded-full"
+          variants={subtlePulse}
+          animate="animate"
+        />
+
+        <div className="absolute top-20 left-20 w-1 h-1 bg-gray-300 rounded-full" />
+        <div className="absolute bottom-20 right-20 w-1 h-1 bg-gray-300 rounded-full" />
+        <div className="absolute top-40 right-40 w-2 h-2 bg-gray-200 rounded-full" />
+      </div>
+
+      <HeroBadges />
+
+      <div className="flex flex-col items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24 relative z-10">
+        <HeroContent />
+      </div>
+    </SectionWrapper>
+  );
+};
+
+export default Hero;

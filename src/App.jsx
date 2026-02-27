@@ -1,24 +1,22 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
-import Hero from './sections/Hero';
-import Showcase from './sections/Showcase';
-import Services from './sections/Services';
-import WorkFlow from './sections/Workflow';
-import FAQ from './sections/FAQ';
-import Footer from './sections/Footer';
+import React from "react";
+import Hero from "./sections/Hero";        
+import Services from "./sections/Services"; 
+import Showcase from "./sections/Showcase"; 
+import Workflow from "./sections/Workflow"; 
+import FAQ from "./sections/FAQ";           
+import Footer from "./sections/Footer";     
 
 function App() {
   return (
-    <>
+    <main className="bg-white">
       <Hero />
-      <Showcase index={0} />
       <Services />
+      <Showcase index={0} initialIndex={0} />
       <Showcase index={1} />
-      <WorkFlow />
+      <Workflow />
       <FAQ />
       <Footer />
-    </>
+    </main>
   );
 }
 
