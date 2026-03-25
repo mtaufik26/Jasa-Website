@@ -3,7 +3,7 @@ import { motion } from "framer-motion"; // eslint-disable-line
 import { contactInfo } from "./FooterData";
 import { fadeInUp, staggerContainer } from "../../animations/variants";
 
-const ContactItem = ({ icon, text}) => {
+const ContactItem = ({ icon, text }) => {
   return (
     <motion.div
       variants={fadeInUp}
@@ -55,7 +55,7 @@ const FooterContact = () => {
     >
       <motion.div variants={fadeInUp} className="mb-6">
         <h3 className="text-2xl font-light text-gray-900 mb-2">
-          Bata<span className="font-bold italic">Kreatif</span>
+          Canvas<span className="font-bold italic">Web Partner</span>
         </h3>
         <p className="text-gray-400 text-xs uppercase tracking-wider">
           Jasa Pembuatan Website Profesional

@@ -24,7 +24,7 @@ const Footer = () => {
             <SectionTitle
               title="Siap Membuat Website Impian Anda?"
               subtitle="Konsultasikan kebutuhan website Anda sekarang juga. Tim kami siap membantu mewujudkan website profesional untuk bisnis Anda."
-              badge="Mulai Proyek Anda"
+              badge="Mulai Website Anda"
               centered={true}
               variant="minimal"
               highlightLastWords={2}
@@ -37,7 +37,7 @@ const Footer = () => {
               >
                 <ButtonKonsul
                   phone="6289876543210"
-                  message="Halo, saya tertarik dengan layanan Anda"
+                  message="Halo, saya ingin konsultasi pembuatan website"
                   className="relative px-8 py-4 bg-gray-900 hover:bg-gray-800 text-white text-sm font-medium tracking-wide uppercase transition-all duration-300 focus:outline-none focus:ring-1 focus:ring-gray-400"
                 />
               </motion.div>
@@ -65,7 +65,7 @@ const Footer = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
             >
-              © {currentYear} Bata Kreatif. All rights reserved.
+              © {currentYear} Canvas Web Partner. All rights reserved.
             </motion.p>
             <FooterSocial />
           </div>

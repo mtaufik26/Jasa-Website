@@ -13,7 +13,7 @@ const HeroContent = () => {
     >
       <motion.div variants={fadeInUp} className="mb-8">
         <span className="inline-block px-4 py-2 border border-gray-200 bg-white text-gray-600 text-xs font-medium tracking-[0.2em] uppercase">
-          Jasa Website Profesional
+          Canvas Web Partner
         </span>
       </motion.div>
 
@@ -23,7 +23,7 @@ const HeroContent = () => {
       >
         Jasa Pembuatan{" "}
         <span className="font-bold italic block sm:inline">
-          Website Custom
+          Website Profesional
         </span>
       </motion.h1>
 
@@ -31,12 +31,12 @@ const HeroContent = () => {
         variants={fadeInUp}
         className="text-base sm:text-lg text-gray-500 mb-10 leading-relaxed max-w-2xl mx-auto font-light"
       >
-        Dapatkan website custom yang{" "}
+        Canvas Web Partner membantu Anda mendapatkan website{" "}
         <span className="font-medium text-gray-700">
-          cepat, responsif, dan SEO friendly
+          modern, cepat, responsif, dan SEO friendly
         </span>
         .<br />
-        Kami urus seluruh proses dari strategi hingga optimasi berkelanjutan.
+        Kami menangani seluruh proses mulai dari perencanaan hingga website siap digunakan.
       </motion.p>
 
       <motion.div variants={fadeInUp}>
@@ -47,7 +47,7 @@ const HeroContent = () => {
         >
           <ButtonKonsul
             phone="6289876543210"
-            message="Halo, saya tertarik dengan layanan website custom Anda"
+            message="Halo, saya tertarik dengan layanan pembuatan website dari Canvas Web Partner"
             variant="primary"
           />
         </motion.div>
@@ -83,7 +83,7 @@ const HeroContent = () => {
 
       <motion.div variants={fadeInUp} className="mt-16">
         <p className="text-xs text-gray-300 italic">
-          "Fokus pada bisnis Anda, biarkan kami yang menangani teknisnya."
+          "Canvas Web Partner membantu bisnis Anda memiliki website profesional."
         </p>
       </motion.div>
     </motion.div>
