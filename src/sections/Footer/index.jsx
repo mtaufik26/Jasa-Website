@@ -65,7 +65,7 @@ const Footer = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
             >
-              © {currentYear} Canvas Web Partner. All rights reserved.
+              © {currentYear} Human Code. All rights reserved.
             </motion.p>
             <FooterSocial />
           </div>

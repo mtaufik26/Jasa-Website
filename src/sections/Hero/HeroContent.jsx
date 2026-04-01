@@ -13,7 +13,7 @@ const HeroContent = () => {
     >
       <motion.div variants={fadeInUp} className="mb-8">
         <span className="inline-block px-4 py-2 border border-gray-200 bg-white text-gray-600 text-xs font-medium tracking-[0.2em] uppercase">
-          Canvas Web Partner
+          Human Code
         </span>
       </motion.div>
 
@@ -31,7 +31,7 @@ const HeroContent = () => {
         variants={fadeInUp}
         className="text-base sm:text-lg text-gray-500 mb-10 leading-relaxed max-w-2xl mx-auto font-light"
       >
-        Canvas Web Partner membantu Anda mendapatkan website{" "}
+        Human Code membantu Anda mendapatkan website{" "}
         <span className="font-medium text-gray-700">
           modern, cepat, responsif, dan SEO friendly
         </span>
@@ -47,7 +47,7 @@ const HeroContent = () => {
         >
           <ButtonKonsul
             phone="6289876543210"
-            message="Halo, saya tertarik dengan layanan pembuatan website dari Canvas Web Partner"
+            message="Halo, saya tertarik dengan layanan pembuatan website dari Human Code"
             variant="primary"
           />
         </motion.div>
@@ -83,7 +83,7 @@ const HeroContent = () => {
 
       <motion.div variants={fadeInUp} className="mt-16">
         <p className="text-xs text-gray-300 italic">
-          "Canvas Web Partner membantu bisnis Anda memiliki website profesional."
+          "Human Code membantu bisnis Anda memiliki website profesional."
         </p>
       </motion.div>
     </motion.div>

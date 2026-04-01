@@ -55,7 +55,7 @@ const FooterContact = () => {
     >
       <motion.div variants={fadeInUp} className="mb-6">
         <h3 className="text-2xl font-light text-gray-900 mb-2">
-          Canvas<span className="font-bold italic">Web Partner</span>
+          Human <span className="font-bold italic">Code</span>
         </h3>
         <p className="text-gray-400 text-xs uppercase tracking-wider">
           Jasa Pembuatan Website Profesional
