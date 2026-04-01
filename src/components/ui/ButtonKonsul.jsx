@@ -31,7 +31,7 @@ const ArrowIcon = () => (
 );
 
 function ButtonKonsul({
-  phone = "6281234567890",
+  phone = "+62 85710249716",
   message = "Halo, saya mau konsultasi",
   className = "",
   variant = "primary",

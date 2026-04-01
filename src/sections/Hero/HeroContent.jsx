@@ -46,7 +46,7 @@ const HeroContent = () => {
           whileTap={{ scale: 0.99 }}
         >
           <ButtonKonsul
-            phone="6289876543210"
+            phone = "+62 85710249716"
             message="Halo, saya tertarik dengan layanan pembuatan website dari Human Code"
             variant="primary"
           />

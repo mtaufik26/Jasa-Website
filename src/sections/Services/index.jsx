@@ -63,7 +63,7 @@ const Services = () => {
                 whileTap={{ scale: 0.99 }}
               >
                 <ButtonKonsul
-                  phone="6289876543210"
+                  phone = "+62 85710249716"
                   message="Halo, saya tertarik dengan layanan Company Profile"
                   className="relative px-6 py-3 bg-gray-900 hover:bg-gray-800 text-white text-sm font-medium tracking-wide uppercase transition-all duration-300 focus:outline-none focus:ring-1 focus:ring-gray-400"
                 />
@@ -147,7 +147,7 @@ const Services = () => {
               whileTap={{ scale: 0.99 }}
             >
               <ButtonKonsul
-                phone="6289876543210"
+                phone = "+62 85710249716"
                 message="Halo, saya ingin konsultasi pembuatan website company profile"
                 variant="secondary"
               />

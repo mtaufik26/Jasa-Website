@@ -60,7 +60,7 @@ const Workflow = () => {
             Siap memulai proyek Anda?
           </p>
           <ButtonKonsul
-            phone="6289876543210"
+            phone = "+62 85710249716"
             message="Halo, saya ingin lihat detail proses"
             variant="secondary"
           />
