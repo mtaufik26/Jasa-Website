@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion"; // eslint-disable-line
+import { useNavigate } from "react-router-dom";
 
 const WhatsAppIcon = () => (
   <svg
@@ -61,16 +62,29 @@ function ButtonKonsul({
     `,
   };
 
+  const navigate = useNavigate();
+  const isSecondary = variant === "secondary";
+  const linkHref = isSecondary ? "/detail" : whatsappLink;
+
+  const handleClick = (e) => {
+    if (isSecondary) {
+      e.preventDefault();
+      navigate('/detail');
+      window.scrollTo(0, 0);
+    }
+  };
+
   return (
     <motion.a
-      href={whatsappLink}
-      target="_blank"
-      rel="noopener noreferrer"
+      href={linkHref}
+      onClick={handleClick}
+      target={isSecondary ? undefined : "_blank"}
+      rel={isSecondary ? undefined : "noopener noreferrer"}
       className={`${baseStyles} ${variants[variant] || ""} ${className}`}
       whileHover={{ y: -1 }}
       whileTap={{ scale: 0.99 }}
       transition={{ duration: 0.2 }}
-      aria-label="Konsultasi gratis via WhatsApp"
+      aria-label={isSecondary ? "Lihat Detail" : "Konsultasi gratis via WhatsApp"}
     >
       {variant === "primary" ? (
         <>
