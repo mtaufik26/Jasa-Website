@@ -59,10 +59,11 @@ const Workflow = () => {
           <p className="text-gray-400 text-sm mb-4 uppercase tracking-wider">
             Siap memulai proyek Anda?
           </p>
+
           <ButtonKonsul
-            phone = "+62 85710249716"
-            message="Halo, saya ingin lihat detail proses"
-            variant="secondary"
+            phone="+62 85710249716"
+            message="Halo, saya tertarik dengan layanan Company Profile"
+            className="relative px-6 py-3 bg-gray-900 hover:bg-gray-800 text-white text-sm font-medium tracking-wide uppercase transition-all duration-300 focus:outline-none focus:ring-1 focus:ring-gray-400"
           />
         </motion.div>
       </Container>
