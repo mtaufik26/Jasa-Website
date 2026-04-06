@@ -32,9 +32,11 @@ const Hero = () => {
         <div className="absolute top-40 right-40 w-2 h-2 bg-gray-200 rounded-full" />
       </div>
 
-      <HeroBadges />
+      <div className="absolute inset-0 w-full max-w-7xl mx-auto h-full max-h-[800px] my-auto pointer-events-none z-10">
+        <HeroBadges />
+      </div>
 
-      <div className="flex flex-col items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24 relative z-10">
+      <div className="flex flex-col items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24 relative z-20">
         <HeroContent />
       </div>
     </SectionWrapper>

@@ -44,7 +44,7 @@ const HeroBadges = () => {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 + idx * 0.1, duration: 0.4 }}
-            className="px-3 py-1.5 bg-white border border-gray-200 text-xs font-medium text-gray-600 tracking-wider shadow-sm"
+            className="px-3 py-1.5 bg-white border border-gray-200 text-xs font-medium text-gray-600 tracking-wider shadow-sm pointer-events-auto"
           >
             {badge}
           </motion.span>

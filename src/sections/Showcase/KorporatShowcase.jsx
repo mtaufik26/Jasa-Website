@@ -32,7 +32,7 @@ const KorporatShowcase = ({ initialIndex = 0 }) => {
   };
 
   return (
-    <section className="w-full h-screen bg-white relative overflow-hidden">
+    <section className="w-full min-h-screen lg:min-h-0 lg:h-[700px] xl:h-[800px] bg-white relative overflow-hidden">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div
           className="absolute inset-0 opacity-10"
