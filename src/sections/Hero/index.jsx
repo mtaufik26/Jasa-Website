@@ -36,7 +36,7 @@ const Hero = () => {
         <HeroBadges />
       </div>
 
-      <div className="flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24 relative z-20">
+      <div className="flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-32 relative z-20">
         <HeroContent />
       </div>
     </SectionWrapper>
