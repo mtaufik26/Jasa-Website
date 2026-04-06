@@ -8,7 +8,7 @@ import { subtlePulse } from "../../animations/variants";
 const Hero = () => {
   return (
     <SectionWrapper 
-      className="min-h-screen"
+      className="relative"
       withPattern={false} 
     >
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -36,7 +36,7 @@ const Hero = () => {
         <HeroBadges />
       </div>
 
-      <div className="flex flex-col items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24 relative z-20">
+      <div className="flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24 relative z-20">
         <HeroContent />
       </div>
     </SectionWrapper>
