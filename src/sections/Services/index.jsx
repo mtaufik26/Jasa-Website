@@ -3,7 +3,7 @@ import { motion } from "framer-motion"; // eslint-disable-line
 import SectionWrapper from "../../components/layout/SectionWrapper";
 import Container from "../../components/layout/Container";
 import SectionTitle from "../../components/ui/SectionTitle";
-import ButtonKonsul from "../../components/ui/ButtonKonsul";
+import ButtonDetail from "../../components/ui/ButtonDetail";
 import ServicesGrid from "./ServicesGrid";
 import CompanyProfileGrid from "./CompanyProfileGrid";
 import BenefitCard from "../../components/cards/BenefitCard";
@@ -62,11 +62,7 @@ const Services = () => {
                 whileHover={{ y: -1 }}
                 whileTap={{ scale: 0.99 }}
               >
-                <ButtonKonsul
-                  phone = "+62 85710249716"
-                  message="Halo, saya tertarik dengan layanan Company Profile"
-                  className="relative px-6 py-3 bg-gray-900 hover:bg-gray-800 text-white text-sm font-medium tracking-wide uppercase transition-all duration-300 focus:outline-none focus:ring-1 focus:ring-gray-400"
-                />
+                <ButtonDetail />
               </motion.div>
             </motion.div>
           </div>
@@ -146,11 +142,7 @@ const Services = () => {
               whileHover={{ y: -1 }}
               whileTap={{ scale: 0.99 }}
             >
-              <ButtonKonsul
-                phone = "+62 85710249716"
-                message="Halo, saya ingin konsultasi pembuatan website company profile"
-                variant="secondary"
-              />
+              <ButtonDetail />
             </motion.div>
           </motion.div>
 

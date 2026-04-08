@@ -7,6 +7,7 @@ import Workflow from "./sections/Workflow";
 import FAQ from "./sections/FAQ";
 import Footer from "./sections/Footer";
 import DetailPage from "./pages/page";
+import ProjectDetail from "./pages/ProjectDetail";
 
 function LandingPage() {
   return (
@@ -28,6 +29,7 @@ function App() {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/detail" element={<DetailPage />} />
+        <Route path="/detail/:slug" element={<ProjectDetail />} />
       </Routes>
     </main>
   );

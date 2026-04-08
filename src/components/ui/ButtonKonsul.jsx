@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion"; // eslint-disable-line
-import { useNavigate } from "react-router-dom";
 
 const WhatsAppIcon = () => (
   <svg
@@ -14,28 +13,10 @@ const WhatsAppIcon = () => (
   </svg>
 );
 
-const ArrowIcon = () => (
-  <svg
-    className="w-3 h-3 flex-shrink-0"
-    fill="none"
-    stroke="currentColor"
-    viewBox="0 0 24 24"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={1.5}
-      d="M17 8l4 4m0 0l-4 4m4-4H3"
-    />
-  </svg>
-);
-
 function ButtonKonsul({
   phone = "+62 85710249716",
   message = "Halo, saya mau konsultasi",
   className = "",
-  variant = "primary",
 }) {
   const sanitizedPhone = phone.replace(/[\s\-+()]/g, "");
   const whatsappLink = `https://wa.me/${sanitizedPhone}?text=${encodeURIComponent(message)}`;
@@ -47,56 +28,24 @@ function ButtonKonsul({
     transition-all duration-300
     focus:outline-none focus:ring-1 focus:ring-gray-400
     active:scale-[0.99]
+    bg-gray-900 hover:bg-gray-800
+    text-white
+    border border-gray-900
   `;
-
-  const variants = {
-    primary: `
-      bg-gray-900 hover:bg-gray-800
-      text-white
-      border border-gray-900
-    `,
-    secondary: `
-      bg-white hover:bg-gray-50
-      text-gray-700 hover:text-gray-900
-      border border-gray-200 hover:border-gray-400
-    `,
-  };
-
-  const navigate = useNavigate();
-  const isSecondary = variant === "secondary";
-  const linkHref = isSecondary ? "/detail" : whatsappLink;
-
-  const handleClick = (e) => {
-    if (isSecondary) {
-      e.preventDefault();
-      navigate('/detail');
-      window.scrollTo(0, 0);
-    }
-  };
 
   return (
     <motion.a
-      href={linkHref}
-      onClick={handleClick}
-      target={isSecondary ? undefined : "_blank"}
-      rel={isSecondary ? undefined : "noopener noreferrer"}
-      className={`${baseStyles} ${variants[variant] || ""} ${className}`}
+      href={whatsappLink}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`${baseStyles} ${className}`}
       whileHover={{ y: -1 }}
       whileTap={{ scale: 0.99 }}
       transition={{ duration: 0.2 }}
-      aria-label={isSecondary ? "Lihat Detail" : "Konsultasi gratis via WhatsApp"}
+      aria-label="Konsultasi gratis via WhatsApp"
     >
-      {variant === "primary" ? (
-        <>
-          <WhatsAppIcon />
-          <span>Konsultasi Gratis</span>
-        </>
-      ) : (
-        <>
-          <span>Lihat Detail</span>
-          <ArrowIcon />
-        </>
-      )}
+      <WhatsAppIcon />
+      <span>Konsultasi Gratis</span>
     </motion.a>
   );
 }

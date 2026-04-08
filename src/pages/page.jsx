@@ -1,5 +1,6 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion'; // eslint-disable-line
+import { Link } from 'react-router-dom';
 import SectionWrapper from '../components/layout/SectionWrapper';
 import Container from '../components/layout/Container';
 import SectionTitle from '../components/ui/SectionTitle';
@@ -32,8 +33,9 @@ const DetailsCard = ({ item }) => {
         </p>
 
         <div className="mt-auto pt-2">
-          <a 
-            href={item.link} 
+          <Link 
+            to={item.link} 
+            onClick={() => window.scrollTo(0, 0)}
             className="inline-flex items-center justify-center w-10 h-10 border border-gray-200 text-gray-600 group-hover:bg-gray-900 group-hover:border-gray-900 group-hover:text-white transition-all duration-300"
             aria-label={`Lihat detail untuk ${item.title}`}
           >
@@ -47,7 +49,7 @@ const DetailsCard = ({ item }) => {
             >
                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
-          </a>
+          </Link>
         </div>
       </div>
     </motion.div>
