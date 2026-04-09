@@ -3,6 +3,7 @@ import { motion } from "framer-motion"; // eslint-disable-line
 import { navLinks } from "./FooterData";
 import FooterLink from "../../components/cards/FooterLink";
 import { fadeInUp, staggerContainer } from "../../animations/variants";
+import Logo from "../../../public/Logo/4.1.png"
 
 const FooterNav = () => {
   return (
@@ -68,7 +69,7 @@ const FooterNav = () => {
           variants={fadeInUp}
         >
           <img 
-            src="/Logo/4 - Copy.png" 
+            src={Logo}
             alt="Human Code Logo" 
             className="w-full h-full object-contain"
           />
