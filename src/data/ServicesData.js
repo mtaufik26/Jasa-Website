@@ -1,38 +1,37 @@
 export const jenisWebsiteData = [
   {
-    src: "https://images.unsplash.com/photo-1472851294608-062f824d29cc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
-    alt: "Website Toko Online",
-    tooltip:
-      "E-commerce dengan fitur lengkap dan sistem pembayaran terintegrasi",
+    icon: "company",
+    title: "Company Profile Website",
+    description: "Bangun kredibilitas bisnis Anda dengan kehadiran digital yang profesional dan representatif. Tampilkan layanan, visi, dan pencapaian Anda kepada klien global dengan desain modern.",
   },
   {
-    src: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1769&q=80",
-    alt: "Website Portfolio",
-    tooltip: "Tampilan profesional untuk menampilkan karya dan proyek Anda",
+    icon: "portfolio",
+    title: "Portfolio Website",
+    description: "Wadah sempurna untuk menampilkan talenta dan mahakarya Anda. Buat impresi kuat pada rekruter maupun calon klien dengan galeri interaktif yang menawan.",
     featured: true,
   },
   {
-    src: "https://images.unsplash.com/photo-1542744173-05336fcc7ad4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1702&q=80",
-    alt: "Website Landing Page",
-    tooltip: "Halaman konversi tinggi untuk campaign marketing",
+    icon: "custom",
+    title: "Custom Website",
+    description: "Solusi platform digital yang dikembangkan khusus sesuai alur bisnis unik Anda. Mulai dari sistem reservasi, e-commerce, hingga SaaS, semua dirancang presisi.",
   },
 ];
 
 export const companyProfileData = [
   {
-    src: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
-    alt: "Company Profile - Tech Startup",
-    tooltip: "Desain modern untuk startup teknologi dengan fokus pada inovasi",
+    src: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+    title: "Tech Startup",
+    description: "Desain modern dan dinamis untuk startup teknologi dengan fokus kuat pada inovasi dan produk.",
   },
   {
-    src: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1769&q=80",
-    alt: "Company Profile - Manufacturing",
-    tooltip: "Tampilan profesional untuk industri manufaktur",
+    src: "https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&w=800&q=80",
+    title: "Corporate & Industry",
+    description: "Tampilan korporat profesional yang menonjolkan skala, keandalan, dan kualitas industri dengan UI bersih.",
   },
   {
-    src: "https://images.unsplash.com/photo-1497215842964-222b430dc094?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
-    alt: "Company Profile - Creative Agency",
-    tooltip: "Portfolio interaktif untuk agency kreatif",
+    src: "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&w=800&q=80",
+    title: "Creative Agency",
+    description: "Layout estetik dan interaktif yang dirancang khusus untuk memamerkan portfolio tajam dari agensi kreatif.",
   },
 ];
 

@@ -6,6 +6,8 @@ import SectionTitle from "../../components/ui/SectionTitle";
 import ButtonDetail from "../../components/ui/ButtonDetail";
 import ServicesGrid from "./ServicesGrid";
 import CompanyProfileGrid from "./CompanyProfileGrid";
+import KorporatShowcase from "./KorporatShowcase";
+import AgencyShowcase from "./AgencyShowcase";
 import BenefitCard from "../../components/cards/BenefitCard";
 import { benefitData } from "../../data/ServicesData";
 import { fadeInUp, staggerContainer } from "../../animations/variants";
@@ -15,13 +17,12 @@ const Services = () => {
     <SectionWrapper className="py-20 sm:py-24 lg:py-32">
       <Container>
         <motion.div
-          className="mb-20 lg:mb-24"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           variants={staggerContainer()}
         >
-          <div className="text-center mb-12">
+          <div className="text-center mb-12 lg:mb-16">
             <SectionTitle
               title="Jenis Website yang Kami Sediakan"
               subtitle="Dari toko online hingga company profile profesional. Punya ide website custom? Konsultasikan dengan kami."
@@ -30,33 +31,8 @@ const Services = () => {
               variant="default"
               highlightLastWords={2}
             />
-          </div>
 
-          <ServicesGrid />
-        </motion.div>
-
-        <div className="flex justify-center my-16">
-          <div className="w-16 h-px bg-gray-200" />
-        </div>
-
-        <motion.div
-          className="mb-20 lg:mb-24"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
-          variants={staggerContainer()}
-        >
-          <div className="text-center mb-12">
-            <SectionTitle
-              title="Company Profile Profesional"
-              subtitle="Bangun kredibilitas dan kepercayaan dengan company profile yang menampilkan bisnis Anda secara profesional."
-              badge="Khusus Bisnis"
-              centered={true}
-              variant="default"
-              highlightLastWords={1}
-            />
-
-            <motion.div variants={fadeInUp}>
+            <motion.div variants={fadeInUp} className="mt-8">
               <motion.div
                 className="relative inline-block"
                 whileHover={{ y: -1 }}
@@ -67,6 +43,30 @@ const Services = () => {
             </motion.div>
           </div>
 
+          <ServicesGrid />
+        </motion.div>
+
+        <div className="flex justify-center py-16 lg:py-24">
+          <div className="w-16 h-px bg-gray-200" />
+        </div>
+
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={staggerContainer()}
+        >
+          <div className="text-center mb-12 lg:mb-16">
+            <SectionTitle
+              title="Company Profile Profesional"
+              subtitle="Bangun kredibilitas dan kepercayaan dengan company profile yang menampilkan bisnis Anda secara profesional."
+              badge="Khusus Bisnis"
+              centered={true}
+              variant="default"
+              highlightLastWords={1}
+            />
+          </div>
+
           <motion.p
             variants={fadeInUp}
             className="text-center text-gray-400 text-xs uppercase tracking-wider mb-6"
@@ -75,20 +75,24 @@ const Services = () => {
           </motion.p>
 
           <CompanyProfileGrid />
+          
+          <div className="mt-16 lg:mt-24 space-y-16 lg:space-y-24">
+            <KorporatShowcase initialIndex={0} />
+            <AgencyShowcase />
+          </div>
         </motion.div>
 
-        <div className="flex justify-center my-16">
+        <div className="flex justify-center py-16 lg:py-24">
           <div className="w-16 h-px bg-gray-200" />
         </div>
 
         <motion.div
-          className="mb-20 lg:mb-24"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           variants={staggerContainer()}
         >
-          <div className="text-center mb-12">
+          <div className="text-center mb-12 lg:mb-16">
             <SectionTitle
               title="Apa Yang Anda DapatKan"
               subtitle="Setiap proyek website dilengkapi dengan fitur premium untuk memastikan kesuksesan digital bisnis Anda."
@@ -115,7 +119,7 @@ const Services = () => {
         </motion.div>
 
         <motion.div
-          className="text-center pt-8 border-t border-gray-200"
+          className="text-center pt-16 lg:pt-24 mt-16 lg:mt-24 border-t border-gray-200"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}

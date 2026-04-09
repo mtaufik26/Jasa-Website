@@ -17,7 +17,7 @@ const AgencyShowcase = () => {
         }}
       />
 
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
+      <div className="relative z-10 w-full py-12 sm:py-16 lg:py-20">
         <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-16 items-center">
           <motion.div
             initial="hidden"

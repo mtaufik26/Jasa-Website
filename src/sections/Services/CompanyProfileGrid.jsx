@@ -14,9 +14,9 @@ const CompanyProfileGrid = () => {
         <ServiceCard
           key={index}
           src={item.src}
-          alt={item.alt}
+          title={item.title}
+          description={item.description}
           index={index}
-          tooltip={item.tooltip}
         />
       ))}
     </motion.div>
