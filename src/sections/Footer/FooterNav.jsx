@@ -6,16 +6,32 @@ import { fadeInUp, staggerContainer } from "../../animations/variants";
 
 const FooterNav = () => {
   return (
-    <div className="lg:col-span-8 grid grid-cols-1 sm:grid-cols-3 gap-8">
-      <motion.div
-        variants={staggerContainer()}
-      >
+    <div className="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <motion.div variants={staggerContainer()}>
         <motion.h4
           className="text-gray-900 text-sm font-medium uppercase tracking-wider mb-4"
           variants={fadeInUp}
         >
-          Layanan
+          Navigasi Utama
         </motion.h4>
+
+        <motion.ul className="space-y-2" variants={staggerContainer()}>
+          {navLinks.navigasi.map((link, index) => (
+            <FooterLink key={index} href={link.href} index={index}>
+              {link.name}
+            </FooterLink>
+          ))}
+        </motion.ul>
+      </motion.div>
+
+      {/* <motion.div variants={staggerContainer()}>
+        <motion.h4
+          className="text-gray-900 text-sm font-medium uppercase tracking-wider mb-4"
+          variants={fadeInUp}
+        >
+          Layanan Spesialis
+        </motion.h4>
+
         <motion.ul className="space-y-2" variants={staggerContainer()}>
           {navLinks.layanan.map((link, index) => (
             <FooterLink key={index} href={link.href} index={index}>
@@ -23,19 +39,18 @@ const FooterNav = () => {
             </FooterLink>
           ))}
         </motion.ul>
-      </motion.div>
+      </motion.div> */}
 
-      <motion.div
-        variants={staggerContainer()}
-      >
+      <motion.div variants={staggerContainer()}>
         <motion.h4
           className="text-gray-900 text-sm font-medium uppercase tracking-wider mb-4"
           variants={fadeInUp}
         >
-          Perusahaan
+          Alasan Memilih Human Code
         </motion.h4>
+
         <motion.ul className="space-y-2" variants={staggerContainer()}>
-          {navLinks.perusahaan.map((link, index) => (
+          {navLinks.badge.map((link, index) => (
             <FooterLink key={index} href={link.href} index={index}>
               {link.name}
             </FooterLink>
@@ -43,22 +58,22 @@ const FooterNav = () => {
         </motion.ul>
       </motion.div>
 
+      {/* Logo Section */}
       <motion.div
         variants={staggerContainer()}
+        className="flex flex-col items-center lg:items-start justify-center"
       >
-        <motion.h4
-          className="text-gray-900 text-sm font-medium uppercase tracking-wider mb-4"
+        <motion.div
+          className="w-full h-full mb-4"
           variants={fadeInUp}
         >
-          Bantuan
-        </motion.h4>
-        <motion.ul className="space-y-2" variants={staggerContainer()}>
-          {navLinks.bantuan.map((link, index) => (
-            <FooterLink key={index} href={link.href} index={index}>
-              {link.name}
-            </FooterLink>
-          ))}
-        </motion.ul>
+          <img 
+            src="/Logo/4 - Copy.png" 
+            alt="Human Code Logo" 
+            className="w-full h-full object-contain"
+          />
+         
+        </motion.div>
       </motion.div>
     </div>
   );

@@ -9,7 +9,7 @@ import { fadeInUp } from "../../animations/variants";
 
 const FAQ = () => {
   return (
-    <SectionWrapper className="py-20 sm:py-24 lg:py-32">
+    <SectionWrapper id="faq" className="py-20 sm:py-24 lg:py-32">
       <Container>
         <div className="max-w-3xl mx-auto">
           <motion.div

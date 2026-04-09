@@ -9,7 +9,7 @@ import { fadeInUp } from "../../animations/variants";
 
 const Workflow = () => {
   return (
-    <SectionWrapper className="py-20 sm:py-24 lg:py-32">
+    <SectionWrapper id="workflow" className="py-20 sm:py-24 lg:py-32">
       <Container>
         <motion.div
           initial="hidden"

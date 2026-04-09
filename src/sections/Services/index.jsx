@@ -14,9 +14,10 @@ import { fadeInUp, staggerContainer } from "../../animations/variants";
 
 const Services = () => {
   return (
-    <SectionWrapper className="py-20 sm:py-24 lg:py-32">
+    <SectionWrapper id="services" className="py-20 sm:py-24 lg:py-32">
       <Container>
         <motion.div
+          id="jenis-website"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
@@ -51,6 +52,7 @@ const Services = () => {
         </div>
 
         <motion.div
+          id="company-profile"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
@@ -76,7 +78,7 @@ const Services = () => {
 
           <CompanyProfileGrid />
           
-          <div className="mt-16 lg:mt-24 space-y-16 lg:space-y-24">
+          <div id="agency" className="mt-16 lg:mt-24 space-y-16 lg:space-y-24">
             <KorporatShowcase initialIndex={0} />
             <AgencyShowcase />
           </div>

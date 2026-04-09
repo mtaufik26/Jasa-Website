@@ -8,6 +8,7 @@ import { subtlePulse } from "../../animations/variants";
 const Hero = () => {
   return (
     <SectionWrapper 
+      id="hero"
       className="relative"
       withPattern={false} 
     >

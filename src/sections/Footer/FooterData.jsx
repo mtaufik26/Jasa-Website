@@ -1,22 +1,22 @@
 export const navLinks = {
-  layanan: [
-    { name: "Company Profile", href: "#company-profile" },
-    { name: "Landing Page", href: "#landing-page" },
-    { name: "E-Commerce", href: "#ecommerce" },
-    { name: "Custom Website", href: "#custom" },
+  // layanan: [
+  //   { name: "Company Profile Profesional", href: "/#company-profile" },
+  //   { name: "Website Agency & Korporat", href: "/#agency" },
+  //   { name: "Katalog & Toko Online", href: "/#jenis-website" },
+  //   { name: "Custom Web Development", href: "/#jenis-website" },
+  // ],
+  navigasi: [
+    { name: "Beranda", href: "/#hero" },
+    { name: "Layanan Kami", href: "/#services" },
+    { name: "Alur Kerja", href: "/#workflow" },
+    { name: "Tanya Jawab (FAQ)", href: "/#faq" },
   ],
-  perusahaan: [
-    { name: "Tentang Kami", href: "#about" },
-    { name: "Portfolio", href: "#portfolio" },
-    { name: "Testimoni", href: "#testimonials" },
-    { name: "Blog", href: "#blog" },
-  ],
-  bantuan: [
-    { name: "FAQ", href: "#faq" },
-    { name: "Kebijakan Privasi", href: "#privacy" },
-    { name: "Syarat & Ketentuan", href: "#terms" },
-    { name: "Hubungi Kami", href: "#contact" },
-  ],
+  badge: [
+    { name: "Fast Response"},
+    { name: "Free Konsultasi"},
+    { name: "Garansi Revisi"},  
+    { name: "Harga Transparan"},
+  ]
 };
 
 export const contactInfo = {
